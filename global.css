@@ -100,7 +100,7 @@ nav a:active {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    padding: 140px;
+    padding: 150px;
     gap: 30px;
 }
 
