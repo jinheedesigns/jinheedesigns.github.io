@@ -1,0 +1,538 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #041c2c;
+    --secondary-color: #e0c989;
+    --head-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --body-font: Avenir, Helvetica, Arial, sans-serif;
+    --spacing: 80px;
+}
+
+body {
+    background-color: var(--primary-color);
+    line-height: 1.5;
+    margin: 0;
+    display: grid;
+}
+
+.wrapper {
+    font-family: var(--head-font);
+    background-color: white;
+    font-weight: normal;
+}
+
+h1, h2, h3 {
+    line-height: 1.1;
+    font-weight: normal;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+header img {
+    width: 10%;
+    padding-top: 26px;
+    padding-bottom: 26px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 1.5rem;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 1.3rem;
+    padding-left: 0;
+}
+
+nav a:link {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:visited {
+    color: white;
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+}
+
+nav a:active {
+    font-weight: 500;
+}
+
+.hero-image {
+    aspect-ratio: 16 / 9;
+    background-image: url("images/platedtable.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display: grid;
+    place-content: center;
+    color: white;
+    text-shadow: 2px 2px 3px rgb(0, 0, 0);
+    font-family: var(--body-font);
+}
+
+.hero-image h2 {
+    color: white;
+    margin-bottom: 10px;
+    text-transform: normal;
+    font-style: italic;
+    letter-spacing: .02em;
+    font-size: 1.8rem;
+    margin-top: 0;
+}
+
+.hero-image p {
+    font-size: 1.3rem;
+    margin-top: 0;
+    margin-bottom: 300px;
+}
+
+.about-us, .menu-head, .contact-head {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    text-align: center;
+}
+
+.about-us h2, .menu-head h2, .contact-head h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+}
+
+.about-us p, .menu-head p, .contact-head p {
+    font-family: var(--body-font);
+    font-size: 1.2rem;
+    font-weight: thin;
+    color: #4d4d4d;
+}
+
+footer {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: var(--primary-color);
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-family: var(--body-font);
+}
+
+address, .hours {
+    line-height: 1.5;
+    color: var(--secondary-color);
+    font-style: normal;
+    font-size: 16px;
+    color: var(--secondary-color);
+    margin: 0;
+}
+
+.hours h5, address h5 {
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+address p, .hours dl {
+    margin: 0;
+    color: white;
+}
+
+address a:link {
+    color: white;
+    text-decoration: none;
+}
+
+address a:visited {
+    color: white;
+}
+
+address a:hover {
+    color: var(--secondary-color);
+}
+
+address a:active {
+    font-weight: bold;
+}
+
+.copyright {
+    grid-column: 2 / 3;
+    color: gray;
+    font-size: 12px;
+}
+
+dl {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.features {
+    display: grid;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 4rem;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.features h3 {
+    aspect-ratio: 4/6;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    place-content: center;
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px black;
+    border-radius: 30px;
+}
+
+.features h3:nth-child(1) {
+    grid-column: 1 / 2;
+    background-image: url("images/location.jpg");
+}
+
+.features h3:nth-child(2) {
+    grid-column: 2 / 3;
+    background-image: url("images/sprinkle.jpg");
+}
+
+.features h3:nth-child(3) {
+    grid-column: 3 / 4;
+    background-image: url("images/beeftartare.jpg");
+}
+
+.mailing {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    background-image: url("images/mailing.png");
+    aspect-ratio: 3/1;
+    background-size: cover;
+    background-position: bottom;
+    place-content: center;
+    padding: 30px;
+    padding-left: 80px;
+}
+
+.mailing h4 {
+    font-family: var(--body-font);
+    padding: 0;
+    color: var(--primary-color);
+    font-weight: normal;
+    font-size: 1.4rem;
+    margin: 0;
+    margin-bottom: 1rem;
+    text-wrap: balance;
+}
+
+.mailing a {
+    font-family: var(--body-font);
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    color: #041c2c;
+    font-size: 1.5rem;
+    background-color: var(--secondary-color);
+    padding: 1rem 2.5rem;
+    border-radius: 3rem;
+}
+
+.mailing a:hover {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.35);
+}
+
+.drinks, .savory, .sweet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: var(--secondary-color);
+    /* border-bottom: thin solid var(--primary-color); */
+}
+
+.menulist h3 {
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    margin: 0;
+    place-content: center;
+    color: white;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px black;
+}
+
+.drinks h3 {
+    grid-column: 1 / 2;
+    background-image: url("images/cocktail.jpg");
+}
+
+.drinks h4 {
+    font-family: var(--body-font);
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.beer {
+    padding-top: 30px;
+}
+
+.savory h3 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    background-image: url("images/scallop2.jpg");
+}
+
+.sweet h3 {
+    grid-column: 1 / 2;
+    background-image: url("images/cherrymeringue.jpg");
+    color: var(--primary-color);
+    text-transform: uppercase;
+    text-shadow: 0 0 10px white;
+}
+
+.menulist ul {
+    list-style: none;
+    padding: 30px;
+    margin: 0;
+}
+
+.menulist li {
+    /* list-style: none; */
+    text-align: center;
+    padding: 0;
+    font-size: 1rem;
+    margin: 0;
+    font-family: var(--body-font);
+}
+
+.menulist h5 {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    font-style: italic;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.menulist p {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.drinks ul {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.sweet ul {
+    padding-top: 348px;
+    padding-bottom: 348px;
+}
+
+.contact-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;  
+    margin-top: 0;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 64px;
+    column-gap: 30px;
+    text-align: center;
+    color: white;
+}
+
+.contact-buttons a:nth-child(1) {
+    grid-column: 1 / 2;
+    background-image: url("images/cocktails.jpg");
+    background-size: cover;
+    background-position: bottom;
+}
+
+.contact-buttons a:nth-child(2) {
+    grid-column: 2 / 3;
+    background-image: url("images/eating.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.contact-buttons a {
+    font-family: var(--body-font);
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    background-color: var(--secondary-color);
+    padding: 8rem 2.5rem;
+    border-radius: 3rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px black;
+}
+
+.contact-buttons a {
+    font-family: var(--body-font);
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    padding: 8rem 2.5rem;
+    border-radius: 3rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px black;
+}
+
+.contact-buttons a:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+@media screen and (min-width: 1100px) {
+    .about-us, .menu-head {
+        margin-left: 120px;
+        margin-right: 120px;
+    }
+    
+    .hero-image {
+        aspect-ratio: 2.13/1;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .drinks, .savory, .sweet {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .menulist h3 {
+        aspect-ratio: 4/3;
+    }
+
+    .savory h3 {
+        grid-column: 1 / 2;
+    }
+
+    header, footer, .about-us, .menu-head {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    header img {
+        width: 15%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+
+}
+
+@media screen and (max-width: 800px) {
+    
+    .features {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px;
+        row-gap: 20px;
+
+    }
+
+    .features h3 {
+        aspect-ratio: 4/3;
+        grid-column: 1 / 2;
+    }
+
+    .contact-buttons {
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
+        margin-right: 30px;
+        row-gap: 20px;
+    }
+
+    .mailing {
+        padding-left: 30px;
+    }
+
+    .mailing h4 {
+        font-size: 1.2rem;
+    }
+
+    .mailing a {
+        font-size: 1rem;
+        padding: 0.7rem 2rem;
+        border-radius: 2rem;
+    }
+
+    .hero-image {
+        text-shadow: 0 0 8px rgb(0, 0, 0);
+    }
+
+    .hero-image h2 {
+        font-size: 1.3rem;
+    
+    }
+    
+    .hero-image p {
+        font-size: 1rem;
+        margin-bottom: 200px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    header {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        gap: var(--spacing-narrow);
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    h1 {
+        margin: 10px;
+        font-size: 4rem;
+    }
+    
+    header img {
+        width: 40%;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+}
+
+/* empty commit */
