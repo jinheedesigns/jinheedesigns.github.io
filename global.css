@@ -596,12 +596,11 @@ footer a:active {
 
     .projectbackground  {
         grid-template-columns: 1fr;
-        grid-template-rows: 3fr 2fr;
     }
 
     .projectbackground img {
         grid-area: 1 / 1 / 2 / 2;
-        max-width: 100%;   
+        width: 100%;   
     }
 
     .projectbacktext {
