@@ -594,10 +594,26 @@ footer a:active {
         gap: 0;
     }
 
+    .projectbackground  {
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr 2fr;
+    }
+
+    .projectbackground img {
+        grid-area: 1 / 1 / 2 / 2;
+        max-width: 100%;   
+    }
+
+    .projectbacktext {
+        grid-area: 2 / 1 / 2 / 2;
+    }
+
+
     .statement, .concept, .conceptaspects, .process, .personas, .final, .prototype, .future {
         padding-left: 40px;
         padding-right: 40px;
     }
+
 
     .concept {
         display: block;
