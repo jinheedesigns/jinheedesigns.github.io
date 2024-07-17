@@ -572,6 +572,21 @@ footer a:active {
     padding-top: 25px;
 }
 
+.soon{
+    background-image: linear-gradient(135deg, var(--primary-color), white, var(--primary-color));
+    padding: 260px;
+    padding-top: 300px;
+    padding-bottom: 250px;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.soon h1{
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+}
+
 @media screen and (max-width: 1000px) {
     .intro, .background, .work, .contact, .category, .statement, .projectbackground, .research, .personas, .insights, .userjourney, .concept, .conceptaspects, .process, .final, .prototype, .future {
         padding-left: 80px;
@@ -777,7 +792,7 @@ footer a:active {
 
 
 @media screen and (max-width: 600px) {
-    
+
     header {
         flex-direction: row;
         justify-content: space-between;
@@ -817,6 +832,7 @@ footer a:active {
     .contact li {
         margin-bottom: 10px;
     }
+
 }
 
 .auto-grid {
