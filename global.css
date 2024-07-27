@@ -291,7 +291,15 @@ footer a:active {
 }
 
 .contactpage{
-    background-color: var(--secondary-color);
+    background-color: white;
+}
+
+.contactpage header{
+    background-color: var(--primary-color);
+}
+
+.contactpage nav a:hover {
+    color: white;
 }
 
 .contact {
@@ -344,7 +352,7 @@ footer a:active {
 }
 
 .contact a:hover {
-    color: var(--primary-color);
+    color: white;
 }
 
 .contact a:active {
