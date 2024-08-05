@@ -617,7 +617,7 @@ footer a:active {
 }
 
 .soon{
-    background-image: linear-gradient(135deg, var(--primary-color), white, var(--primary-color));
+    background-color: var(--secondary-color);
     padding: 260px;
     padding-top: 300px;
     padding-bottom: 250px;
